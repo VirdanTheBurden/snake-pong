@@ -6,6 +6,7 @@ authors = ["Luna Ilune Makyus <ojackson287@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+arcade = "^2.6.15"
 
 [tool.poetry.dev-dependencies]
 
