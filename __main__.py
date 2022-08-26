@@ -25,3 +25,6 @@ def main():
     window = SnakePong()
     window.setup()
     arcade.run()
+
+if __name__ == "__main__":
+    main()
