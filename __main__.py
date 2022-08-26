@@ -3,8 +3,8 @@
 import arcade
 
 # Constants, do not touch
-SCREEN_WIDTH = 1080
-SCREEN_HEIGHT = 1920
+SCREEN_WIDTH = 1920
+SCREEN_HEIGHT = 1080
 TITLE = "Snake Pong"
 
 class SnakePong(arcade.Window):
