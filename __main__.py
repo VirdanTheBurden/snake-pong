@@ -1,29 +1,18 @@
 # TODO: field initialization, apple seeding, paddle spawning, etc.
 
 import arcade
+from src.menu import MenuView
 
 # Constants, do not touch
-SCREEN_WIDTH = 1920
-SCREEN_HEIGHT = 1080
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 600
 TITLE = "Snake Pong"
 
-class SnakePong(arcade.Window):
-    """Main application class."""
-
-    def __init__(self):
-        super().__init__(SCREEN_WIDTH, SCREEN_HEIGHT, TITLE)
-        arcade.set_background_color(arcade.color.GRAY)
-    
-    def setup(self):
-        """Draw paddle and snake."""
-        pass
-
-    def on_draw(self):
-        self.clear()
-
 def main():
-    window = SnakePong()
-    window.setup()
+    window = arcade.Window(SCREEN_WIDTH, SCREEN_HEIGHT, TITLE)
+    menu_view = MenuView()
+    window.show_view(menu_view)
+    menu_view.setup()
     arcade.run()
 
 if __name__ == "__main__":
